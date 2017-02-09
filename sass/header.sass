@@ -1,0 +1,714 @@
+@import "vars.sass"
+@import "app/libs/bxslider-4/dist/jquery.bxslider.min"
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	// ::after
+	// 	content: " "
+	// 	display: block
+	// 	width: 100%
+	// 	height: 0
+	// 	clear: both
+
+body
+	width: 100%
+	margin: auto
+	color: #fff
+	height: 100%
+	overflow-x: hidden 
+	
+section
+	padding: 0
+	width: 100%
+	height: 100%
+
+
+.left_menu
+	// min-height: 500px
+	height: 100%
+	float: left
+	width: 4.3%
+	background-color: $left_col
+
+//START PRELOADER STYLES
+#loader-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1000
+
+#loader
+	display: block
+	position: relative
+	left: 50%
+	top: 50%
+	width: 150px
+	height: 150px
+	margin: -75px 0 0 -75px
+	border-radius: 50%
+	border: 3px solid transparent
+	border-top-color: #99bf18
+	z-index: 1001
+	animation: spin 2s linear infinite
+	&:before
+		content: ""
+		position: absolute
+		top: 5px
+		left: 5px
+		right: 5px
+		bottom: 5px
+		border-radius: 50%
+		border: 3px solid transparent
+		border-top-color: #dfe7c7
+		animation: spin 3s linear infinite
+	&:after
+		content: ""
+		position: absolute
+		top: 15px
+		right: 15px
+		left: 15px
+		bottom: 15px
+		border-radius: 50%
+		border: 3px solid transparent
+		border-top-color: #ea9309
+		animation: spin 1.5s linear infinite
+
+#loader-wrapper .loader-section
+	position: fixed
+	top: 0
+	width: 51%
+	height: 100%
+	background: #222
+	z-index: 1000
+	transform: translateX(0)
+
+#loader-wrapper .loader-section.section-left
+	left: 0
+
+#loader-wrapper .loader-section.section-right
+	right: 0
+
+Animations
+@keyframes spin
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+// Loaded
+.loaded #loader-wrapper .loader-section.section-left
+	transform: translateX(-100%)
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+.loaded #loader-wrapper .loader-section.section-right
+	transform: translateX(100%)
+	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+.loaded #loader
+	opacity: 0
+	transition: all 0.3s ease-out
+
+.loaded #loader-wrapper
+	visibility: hidden
+	transform: translateY(-100%)
+	transition: all 0.3s 1s ease-out
+//END PRELOADER STYLE
+
+
+#header
+	// background-image: url("../img/dummy/dummy_mainpage.png")
+	// background-repeat: no-repeat
+	// background-size: 95%
+	// background-position: left
+	// background-size: 1920px 950px 
+	// background-color: blue
+	// height: 300px
+	// width: 500px
+	.wrap
+		width: 100%
+		height: 100%
+		background-color: $menu_bg
+	.menu_enjoy
+		position: fixed
+		left: 0
+		width: 22%
+		height: 100%
+		z-index: 400
+		background-color: $left_col
+		.logo_pic
+			.img_logo
+				width: 55%
+				margin-top: 15%
+				margin-left: 25%
+		.menu
+			width: 100%
+			height: 65%
+			// background-color: red		
+			.menu_link
+				float: left
+				display: inline-block
+				// background-color: green
+				width: 100%
+				height: 11%
+				text-decoration: none
+				outline: none
+				z-index: 300
+				.text_hover
+					margin-top: 0px
+					margin-left: 100%
+					background-color: $main_color
+					display: none
+					vertical-align: middle
+					width: 0%
+					height: 100%
+					float: left
+					text-align: left
+					.text_link_hover
+						// transition: all .5s
+						display: none
+						vertical-align: middle
+						margin-left: 2%
+						font-family: 'Roboto-Bold'
+						font-size: 1.6em
+						color: #fff
+					.helper2
+						vertical-align: middle
+						display: inline-block
+						height: 100%
+						width: 0px	
+				.imges
+					display: inline-block
+					width: 25%
+					height: 100%
+					text-align: center
+					float: left
+					.img_link
+						vertical-align: middle
+						display: inline-block
+						// margin-left: 5%
+						// width: 10%
+						height: 50%
+					.helper
+						vertical-align: middle
+						display: inline-block
+						height: 100%
+						width: 0px
+				.textes
+					vertical-align: middle
+					display: inline-block
+					width: 70%
+					height: 100%
+					float: left
+					.text_link
+						display: inline-block
+						vertical-align: middle
+						margin-left: 2%
+						font-family: 'Roboto-Bold'
+						font-size: 1.6em
+						color: $main_color
+						.text_margin
+							margin-left: 2%
+					.active_text
+						transition: all .25s
+						color: #fff
+					.helper_text
+						vertical-align: middle
+						display: inline-block
+						height: 100%
+						width: 0px		
+			.active
+				transition: all .25s
+				background-color: $main_color
+			.active2
+				transition: all .25s
+				background-color: $left_col
+			.menu_on_hover
+				position: absolute
+				left: 100%
+				background-color: $left_col
+				// background-color: red
+				width: 400%
+				height: 7%
+				float: left
+				display: inline-block
+				text-decoration: none
+				outline: none
+				.textes
+					vertical-align: middle
+					display: inline-block
+					width: 70%
+					.text_link
+						margin-left: 2%
+						font-family: 'Roboto-Bold'
+						font-size: 1.6em
+						color: $main_color
+						.text_margin
+							margin-left: 2%
+			.menu_link_soc
+				float: left
+				// display: inline-block
+				// background-color: yellow
+				width: 25%
+				height: 30%
+				text-decoration: none
+				outline: none
+				border-top: 3px solid $left_orange
+				.link_soc
+					// margin-top: 5%
+					text-decoration: none
+					outline: none
+					width: 500%
+					height: 25%
+					// background-color: pink
+					text-align: center
+					display: inline-block
+					.link_img_fix
+						width: 40%
+					.margin
+						margin-left: 3%
+					.margin2
+						margin-left: 10%	
+		.soc_icons
+			float: left
+			// background-color: grey
+			width: 100%
+			height: 10%
+			margin-left: 25%
+			margin-top: 10%
+			.soc_icon_img
+				float: left
+				margin: 0px 3%
+				.soc_img
+					width: 125%
+					height: 130%
+					&:hover
+						transition: 
+						-webkit-filter: grayscale(100%)
+						filter: grayscale(100%)
+						transition: all .5s	
+
+	.slider
+		float: right
+		width: 78%
+		height: 1px
+		height: 100%
+		.top_header
+			background-color: black
+			width: 100%
+			height: 8%
+			line-height: 8%
+			.top_cont1
+				// background-color: pink
+				width: 39.89%
+				height: 100%
+				float: left
+				line-height: 100%
+				position: relative
+				.wrap_top_cont1
+					// background-color: red
+					height: 30%
+					position: absolute
+					top: 0%
+					left: 0%
+					right: 0%
+					bottom: 0%
+					margin: auto	
+					text-align: center
+					.p_text
+						letter-spacing: 0.8px
+						font-size: 1.2em
+						font-family: 'Roboto-Regular'
+					.nav_button
+						display: none
+						// background-color: red
+						width: 50px
+						height: 60%
+						// margin: 10% auto
+						cursor: pointer
+						outline: none
+						z-index: 301
+						#burger
+							position: relative
+							transform: rotate(0deg)
+							transition: .6s ease-in-out
+							span
+								display: block
+								position: absolute
+								height: 5px
+								width: 100%
+								background: #fff
+								border-radius: 9px
+								opacity: 1
+								left: 0
+								transform: rotate(0deg)
+								transition: .3s ease-in-out
+								&:nth-child(1)
+									top: 0
+								&:nth-child(2), &:nth-child(3)
+									top: 12px
+								&:nth-child(4)
+									top: 24px
+							&.active-sandwich span 
+								&:nth-child(1)
+									top: 18px
+									width: 0%
+									left: 50%
+								&:nth-child(2)
+									transform: rotate(45deg)
+								&:nth-child(3)
+									transform: rotate(-45deg)
+								&:nth-child(4)
+									top: 18px
+									width: 0%
+									left: 50%
+									
+
+			.top_cont2
+				float: left
+				width: 22.15%
+				height: 100%
+				line-height: 100%
+				position: relative
+				.top_cont2_wrap
+					height: 75%
+					position: absolute
+					top: 0%
+					left: 0%
+					right: 0%
+					bottom: 0%
+					margin: auto	
+					text-align: right
+					// background-color: pink
+					border-right: 2px solid $main_color
+					.phone_top
+						float: left
+						width: 15%
+						position: absolute
+						top: 0%
+						left: 0%
+						// right: 0%
+						bottom: 0%
+						margin: auto
+					.child
+						display: inline-block
+						vertical-align: middle
+						margin-right: 5%
+						.p_text
+							font-size: 1.4em
+							letter-spacing: 1.3px
+							font-family: 'EuropeDemi'
+					.helper
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+						width: 0px
+
+			.top_cont3
+				float: left
+				// background-color: red
+				width: 19.68%
+				height: 100%
+				line-height: 100%
+				position: relative
+				.top_cont3_wrap
+					border-right: 2px solid $main_color
+					height: 75%
+					position: absolute
+					top: 0%
+					left: 0%
+					right: 0%
+					bottom: 0%
+					margin: auto	
+					text-align: right
+					.child	
+						display: inline-block
+						vertical-align: middle
+						margin-right: 5%
+						.p_text
+							font-size: 1.4em
+							letter-spacing: 1.3px
+							font-family: 'EuropeDemi'
+					.helper
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+						width: 0px
+
+			.top_cont4
+				float: left
+				width: 17.28%
+				height: 100%
+				line-height: 100%
+				position: relative
+				.wrap_top_cont4
+					// background-color: brown
+					height: 65%
+					position: absolute
+					top: 0%
+					left: 0%
+					right: 0%
+					bottom: 0%
+					margin: auto	
+					text-align: center
+					.child	
+						// background-color: grey
+						float: left
+						margin-left: 15%
+						display: inline-block
+						vertical-align: middle
+						.p_text
+							float: left	
+							font-size: 1.6em
+							line-height: 1.0em
+							letter-spacing: -0.8px
+							// font-family: 'EuropeDemi'
+							font-family: 'Roboto-Regular'
+							color: #fff
+							text-decoration: none
+							outline: none
+							transition: all .5s
+							border: none
+							text-align: left
+							&:hover
+								color: grey
+								transition: all .5s
+							.second_word
+								letter-spacing: 2.0px
+						.top_callback
+							width: 14%
+							position: absolute
+							top: 0%
+							right: 20%
+							bottom: 0%
+							margin: auto
+							transition: all .5s
+							// background-color: red
+							background-size: 100%
+							background-position: center
+							background-repeat: no-repeat
+							background-image: url("../img/call-out.png")
+							&:hover
+								background-image: url("../img/call-out_grey.png")
+					.helper
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+						width: 0px
+
+		.slider_bx
+			width: 100%
+			height: 100%
+			// max-width: 1200px
+			margin: 0 auto
+			z-index: 5
+			.bx-wrapper
+				background: none
+				border: none
+				box-shadow: none
+				.slide
+					// min-height: 300px
+					height: 100%
+					width: 100%
+					cursor: pointer
+					-webkit-grab
+					// max-width: 500px
+					margin: 0px auto
+					color: #000	
+				li
+					list-style-type: none
+			// .bx-viewport
+			// 	height: 500px
+			// 	width: 500px	
+			#bx-pager
+				width: 100%
+				font-size: 20px
+				font-weight: 400
+				text-align: center
+				// .active
+				// 	width: 15px
+				// 	height: 15px
+				a
+					text-decoration: none
+					display: inline-block
+			.bx-prev
+				z-index: 5 
+				margin-top: -5%
+				margin-left: 3%
+				width: 41px
+				height: 42px
+				background: url(../img/arr_left.png)
+			.bx-next
+				z-index: 5 
+				margin-top: -5%
+				margin-right: 3%
+				width: 41px
+				height: 42px
+				background: url(../img/arr_right.png)
+			#slide1
+				// background-color: green
+				background-image: url("../img/slide1.jpg")
+				background-repeat: no-repeat
+				background-size: 100% 100%
+			#slide2
+				// background-color: red
+				background-image: url("../img/slide2.jpg")
+				background-repeat: no-repeat
+				background-size: 100% 100%
+			#slide3
+				// background-color: lightblue
+				background-image: url("../img/slide3.jpg")
+				background-repeat: no-repeat
+				background-size: 100% 100%
+	
+	.cascade-slider_wrap
+		position: absolute
+		bottom: 0%
+		background-color: rgba($main-color, 0.7)	
+		position: absolute
+		// opacity: 0.5
+		// margin: -10% auto
+		// width: 920px
+		width: 78%
+		height: 12%
+		z-index: 10
+		text-align: center
+		.cascade-slider_nav
+			// background-color: red
+			width: 10%
+			height: 20%
+			opacity: 1 
+			display: inline-block
+			margin-top: 3.4%
+			// margin-left: 20%
+			.cascade-slider_dot
+				display: inline-block
+				vertical-align: middle	
+				transition: all 0.25s
+				margin: 0% 2.0%
+				border-radius: 100%
+				border: 2px solid #fff
+				list-style: none
+				// background-color: #000 
+				cursor: pointer
+				width: 10%
+				height: 70%
+				z-index: 10
+		.active
+			background-color: #fff
+
+.popup_callback
+	height: 100%
+	width: 100%
+	position: fixed
+	margin: auto
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	background-color: rgba(0, 0, 0, 0.8)
+	z-index: 500
+	.callback_box
+		background-color: #FFF
+		width: 35%
+		height: 48%
+		margin: auto
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: 25px
+		text-align: center
+		vertical-align: middle
+		display: inline-block
+		.close
+			position: absolute
+			top: 2%
+			right: 2%
+			width: 7%
+			cursor: pointer
+			z-index: 300
+		.form_wrapper
+			// background-color: red
+			width: 100%
+			height: 100%
+			.form_callback
+				// background-color: blue
+				width: 100%
+				// height: 80%
+				position: absolute
+				// top: 10%
+				.call_input
+					margin-bottom: 2.5% 
+					width: 75%
+					height: 60px
+					border: 2px solid $main_color
+					padding-left: 3%
+					font-size: 1.2em
+					// letter-spacing: 1.3px
+					font-family: 'EuropeDemi'
+					&::placeholder
+						font-size: 16px
+				.submit_btn	
+					// margin-top: 2.5%
+					background-color: $main_color
+					width: 75%	
+					height: 50px
+					border: none
+					color: #fff
+					font-size: 18px
+					cursor: pointer
+					outline: none
+					transition: all 0.5s
+					&:hover
+						transition: all 0.5s
+						background-color: #FFF
+						color: $main_color 
+						border: 1px solid $main_color 
+		.helper
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0px	
+
+
+.popup_success
+	height: 100%
+	width: 100%
+	position: fixed
+	margin: auto
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	background-color: rgba(255, 255, 255, 0.9)
+	z-index: 999
+	.success_box
+		background-color: #FFF
+		width: 30%
+		height: 20%
+		background-color: rgba(0, 0, 0, 0.7)
+		margin: auto
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		// border-radius: 25px
+		text-align: center
+		vertical-align: middle
+		display: inline-block
+		border: 3px solid grey
+		.p_text_success
+			margin: auto
+			font-family: 'Roboto-Bold'
+			color: #fff	
+			font-size: 1.4em
+
+
+.hidden
+	display: none

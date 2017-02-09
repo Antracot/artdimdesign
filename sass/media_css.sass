@@ -1,0 +1,816 @@
+@import "vars.sass"
+@import "app/libs/bxslider-4/dist/jquery.bxslider.min"
+
+@media (max-width: 1000px)
+	section
+		// width: 100%
+		// height: 100%
+		position: relative
+		// background-color: $left_col
+	
+
+	#header
+		// display: none
+		.wrap
+			// background-color: red
+			// width: 100%
+			.menu_enjoy
+				display: none
+			.left_menu
+				display: none
+			.slider
+				// width: 520px
+				width: 100%
+				.top_header
+					position: fixed
+					z-index: 200
+					height: 50px
+					// height: 15%
+					// display: none
+					width: 100%
+					// height: 300px
+					.top_cont1
+						margin-top: 0%
+						width: 20%
+						.wrap_top_cont1
+							height: 90%
+							.p_text
+								display: none
+							.nav_button
+								vertical-align: middle
+								display: inline-block
+							.helper_top_text
+								display: inline-block
+								vertical-align: middle
+								height: 100%
+								width: 0px	
+					.top_cont2
+						width: 60%
+						// background-color: green
+						text-align: center
+						.top_cont2_wrap
+							border-left: 2px solid $main_color
+							text-align: center
+							.phone_top
+								display: none
+							.child
+								margin-right: 0%
+								.p_text
+									font-size: 1.0em
+								.second_tel_mobile
+									display: inline-block	
+					.top_cont3
+						display: none
+					.top_cont4
+						width: 20%
+						// background-color: red
+						.wrap_top_cont4
+							text-align: center
+							.child
+								float: none
+								margin-left: 0%
+								.p_text
+									font-size: 0.8em
+									letter-spacing: -0.3px
+									text-align: center
+								.top_callback
+									display: none	
+
+				.slider_bx
+					.bx-wrapper
+						margin: 0
+						padding: 0
+						.bx-viewport	
+							// height: auto
+							.bx-wrapper
+								margin: auto
+							.slide
+								margin-top: 50px
+					.bx-prev
+						display: none
+					.bx-next
+						display: none
+							
+
+				.cascade-slider_wrap
+					display: none
+			.mob_menu
+				z-index: 200
+				background-color: rgba(0,0,0,0.8)
+				width: 0
+				height: 0
+				position: fixed
+				top: 50px
+				left: 0%
+				right: 0%
+				// bottom: 0%
+				margin: auto
+				.item_links
+					// background-color: red
+					width: 80%
+					height: 95%
+					overflow: auto
+					margin: auto
+					position: absolute
+					top: 0 
+					left: 0 
+					bottom: 0 
+					right: 0
+					// background-color: red
+					text-align: center
+					.menu_wrapper
+						// margin-top: 10%
+						// margin-bottom: 10%
+						.img_header_mob
+							width: 150px
+						.link_mob_menu
+							margin-top: 5%
+							font-size: 1.2em
+							display: block
+							color: $main_color
+							text-decoration: none
+							outline: none
+							cursor: pointer
+							font-family: 'Roboto-Bold'
+	.popup_callback
+		.callback_box
+			width: 300px
+			height: 250px
+			.close
+				width: 10%
+				outline: none
+			.form_wrapper
+				// background-color: red
+				width: 100%
+				height: 100%
+				.form_callback
+					// background-color: blue
+					width: 100%
+					// height: 80%
+					position: absolute
+					// top: 10%
+					.call_input
+						width: 200px
+						height: 40px
+						font-size: 1.0em
+						// letter-spacing: 1.3px
+						font-family: 'EuropeDemi'
+						&::placeholder
+							font-size: 14px
+					.submit_btn	
+						// margin-top: 2.5%
+						background-color: $main_color
+						width: 200px
+						height: 40px
+	
+
+	.popup_store
+		z-index: 400
+		.popup_store_box
+			width: 100%
+			height: 100%
+			.top_cont_arr
+				.back_link
+					display: none
+				.arr_back
+					display: none
+				.line
+					display: none
+				.close_x_btn
+					float: right
+					// margin-top: 65px
+					margin-right: 10px
+					.close_x_img
+			.left_pic_cont
+				background-color: blue
+				float: none
+				margin-top: 0px
+				width: 90%
+				height: auto
+				margin-left: 5%
+				.img_item
+					float: left
+					margin-top: 0%
+					margin-left: 0%
+					width: 100%
+			.rigth_info_cont
+				// background-color: red
+				float: none
+				width: 90%
+				margin-left: 5%
+				text-align: center
+				.wrap_infos
+					margin: 0%
+					.title_item
+						width: 100%
+						font-size: 1.0em
+					.price
+						float: left
+						width: 125px
+						height: 50px
+						margin-top: 10px
+						margin-left: 5% 
+						background-color: forestgreen
+						display: inline-block
+						text-align: center
+						.price_text
+							color: #fff
+							font-family: 'Roboto-Medium'
+							font-size: 1em
+							text-align: center
+							vertical-align: middle
+							display: inline-block
+						.helper
+							display: inline-block
+							vertical-align: middle
+							width: 0px
+							height: 100%
+					.in_stock
+						margin-top: 10px
+						width: 125px
+						height: 50px
+						// background-color: blue
+						// background-color: $main_color
+						display: inline-block
+						float: right
+						margin-right: 5%
+						.item_in_stock
+							text-align: center
+							margin-left: 0%
+							width: 100%
+							height: 100%
+							background-color: forestgreen
+							float: none
+							.price_text
+								padding-top: 15px
+								padding-bottom: 15px
+								// color: forestgreen
+								color: #fff
+								font-family: 'Roboto-Medium'
+								font-size: 1.0em
+								text-align: center
+							.helper
+								display: inline-block
+								vertical-align: middle
+								width: 0px
+								height: 100%	
+					.descr
+						display: none
+					.buy_btn
+						margin-top: 3%
+						width: 125px
+						height: 50px
+						background-color: $main_color
+						display: inline-block
+						text-align: center
+						outline: none
+						transition: all 0.25s
+						cursor: pointer
+						// float: right
+						// margin-right: 5%
+						.price_text
+							padding-top: 8px
+							padding-bottom: 8px
+							font-family: 'Roboto-Medium'
+							font-size: 1.6em
+							text-align: center
+							transition: all 0.25s
+							
+									
+	.title_wrapper
+		margin-left: 0%
+		width: 100%
+		height: 75px
+		line-height: 65px
+		// height: 10%
+		.page_icon
+			display: none
+		.page_title
+			margin-top: 0px
+			// margin-top: 2%
+			float: left
+			width: 100%
+			background-color: $main_color
+			.page_name
+				width: 100%
+				float: none
+				text-align: center
+				.p_text
+					padding-left: 0%
+					letter-spacing: 1.5px
+					// font-family: 'EuropeDemi'
+					font-family: 'Roboto-Bold'
+					font-size: 1.8em
+			.white_line_right
+				display: none
+
+	#page2
+		.wrap
+			.page_wrapper
+				margin-top: -9px
+				.page2_content
+					width: 90%
+					margin-left: 5%
+					.p_text_cont
+						margin-top: 0%
+						font-size: 1.0em
+				.pics_content
+					display: none		
+
+	#page3
+		.wrap
+			.page3_cont_wrapper
+				width: 100%
+				height: auto
+				padding: 0
+				margin: 0
+				margin-top: -9px
+				.page3_cont_hid
+					.page3_item_text
+						.p_details_mob
+							font-size: 1.0em
+				.item_cont_page3
+					margin: 0.5%
+					width: 49%
+					height: 150px
+					br
+						display: none
+					.hover_cont
+						.cont_page3
+							width: 90%
+							height: 70%
+							.p_text
+								font-size: 0.8em
+						.serv_arrow
+							display: none
+					.hover_cont_details
+						.p_details
+							font-size: 1.0em
+
+	#page4
+		.wrap
+			.left_menu
+				display: none
+			.page_wrapper
+			.mobile_gallery_wrapper
+				margin-top: -9px
+				background-color: green
+				.slider_bx
+					margin: 0% auto
+					.bx-wrapper
+						margin: auto
+						.bx-viewport
+							.bxslider_mob
+								.slide_mobile
+					.bx-prev
+						display: none
+					.bx-next
+						display: none
+
+
+	#page5
+		// display: none
+		.left_menu
+		.wrap
+			.page5_cont
+				margin-top: -9px
+				margin-left: 0%
+				width: 100%
+				.item_left
+					float: none
+					width: 100%
+					height: 130px
+					.left_cont
+						float: left
+						width: 35%
+						height: 100%
+						.item_img_left
+							width: 100%
+							height: 100%
+					.arrow_between
+						margin-left: -8%
+						float: left
+						width: 8%
+						height: 100%
+						.trangle
+							display: none
+					.right_cont
+						float: right
+						width: 65%
+						height: 100%
+						// background-color: black
+						text-align: left
+						position: relative
+						.child
+							margin-top: 0%
+							margin-left: 5%
+							margin-right: 2%
+							.child_text
+								display: inline-block
+								vertical-align: middle
+								// background-color: blue
+								font-size: 0.8em
+								font-family: 'Roboto-Regular'
+				.item_right
+					margin-right: 0%
+					float: none
+					width: 100%
+					height: 130px
+					// background-color: green
+					.left_cont
+						float: left
+						// background-color: red
+						width: 35%
+						height: 100%
+						.item_img_left
+							width: 100%
+							height: 100%
+					.arrow_between
+						margin-left: -8%
+						float: left
+						width: 8%
+						height: 100%
+						.trangle
+							display: none
+					.right_cont
+						float: right
+						width: 65%
+						height: 100%
+						text-align: left
+						position: relative
+						// background-color: $item_orange
+						.child
+							margin-top: 0%
+							margin-left: 5%
+							margin-right: 2%
+							.child_text
+								display: inline-block
+								vertical-align: middle
+								// background-color: blue
+								font-size: 0.8em
+								font-family: 'Roboto-Regular'
+				.mar_top
+					margin-top: 0%
+
+
+
+
+	#page6
+		// display: none
+		.left_menu
+			display: none
+		.wrap
+			.title_wrapper
+				margin-top: -9px
+				.page_title
+					width: 100%
+					.page_name
+						width: 100%
+			.cont_text
+				margin-top: 0%
+				margin-left: 5%
+				width: 90%
+				.p_text
+					font-size: 1.0em
+			.cont_title
+				margin-left: 5%
+				width: 90%
+				margin-top: 10px
+				.p_text
+					color: $main_color
+					font-size: 1.2em
+			.numbers
+				width: 40px
+				height: 40px
+			.content_wrap
+				margin-left: 5%
+				width: 90%
+				// height: 100px
+				margin-top: 25px
+				.item_cont
+					width: 100%
+					float: none
+					margin: 0% 0%
+					position: relative
+					.numbs
+						width: 30px
+						height: 30px
+						top: -18px
+						.numb_text
+							margin-top: 20%
+							font-size: 1.0em
+							font-family: 'Roboto-Regular'
+					.item_text_page6
+						// background-color: blue
+						height: 100%
+						margin: 10px 10px 10px 10px
+						.item_text_page6_ptext
+							// background-color: red
+							margin: 0% 5% 0% 5%
+							font-size: 1.0em
+							font-family: 'Roboto-Medium'
+							color: #000
+			.content_wrap2
+				margin-left: 5%
+				width: 90%
+				// height: 100px
+				margin-top: 0px
+				.item_cont
+					width: 100%
+					float: none
+					margin: 0% 0%
+					position: relative
+					.numbs
+						width: 30px
+						height: 30px
+						position: absolute
+						top: -18px
+						.numb_text
+							margin-top: 20%
+							font-size: 1.0em
+							font-family: 'Roboto-Regular'
+					.item_text_page6
+						// background-color: blue
+						height: 100%
+						margin: 10px 10px 10px 10px
+						.item_text_page6_ptext
+							// background-color: red
+							margin: 0% 5% 0% 5%
+							font-size: 1.0em
+							font-family: 'Roboto-Medium'
+							color: #000
+	#page7
+		// position: initial
+		.wrap
+			// width: 100%
+			// height: 100%
+			// overflow: hidden
+			.title_wrapper
+					.page_name
+						width: 100%
+						.p_text
+							font-size: 1.3em
+			.left_item
+				margin-top: 0%
+				margin-left: 25% 
+				width: 50%
+				float: left			
+				.img_proc
+					width: 100%
+					height: 100%	
+			.right_item
+				margin-top: 2%
+				margin-left: 5%
+				float: left			
+				width: 90%
+				.p_text
+					font-size: 1.0em
+				.p_akciya
+					font-size: 1.4em
+					text-align: center
+			.page7_footer
+				display: none
+
+
+	#page8
+		.wrap
+			width: 100%
+			height: 100%
+			.title_wrapper
+				.page_title
+					.page_name
+						width: 100%
+			.page_title_wrap
+				margin-top: 3.5%
+				margin-left: 5%
+				width: 90%
+				// background-color: black
+				text-align: center
+				.page_title
+					margin-left: 0%
+					width: 100%
+					font-size: 1.2em
+					letter-spacing: 3.9px
+				.text
+					width: 100%
+					margin-top: 1.5%
+					margin-left: 0%
+					.p_text	
+						font-size: 1.0em
+						font-family: 'Roboto-Regular'
+			.garden_store
+				margin-bottom: 10%
+				width: 100%
+				// margin-left: 0.5%
+				// height: 84%
+				// background-color: blue
+				// opacity: 0.7
+				.store_wrap
+					display: inline-block
+					width: 100%
+					height: 100%
+					// background-color: green
+					.item_wrap
+						margin-top: 3.5%
+						margin-left: 5% 
+						// background-color: pink
+						width: 40%
+						height: 16%
+						float: left
+						// border: 1px solid black
+						.item_page8
+							width: 100%
+							height: 80%
+							// background-color: yellow
+							border: 10px solid $main_color
+							.item_price_details
+								outline: none
+								text-decoration: none
+								.item_img
+									width: 100%
+									height: 100%
+						.item_title
+							// background-color: grey
+							height: 30px
+							line-height: 30px
+							margin-top: 2%
+							margin-bottom: 2%
+							.p_text
+								text-transform: uppercase
+								font-size: 0.8em
+								font-family: 'Roboto-Medium'
+								color: #000	
+						.item_title_helper
+							line-height: 15px		
+						.buttons
+							width: 100%
+							height: 10%
+							// background-color: red
+							.left_btn
+								height: 30px
+								font-size: 0.6em
+							.right_btn
+								height: 30px
+								font-size: 0.6em
+								
+					.last_in_line
+						margin-right: 0%
+					.more_goods
+						margin-top: 5%
+						// background-color: black
+						cursor: pointer
+						.p_text_more
+							// background-color: red
+							text-transform: uppercase
+							font-size: 1.1em
+							font-family: 'Roboto-Medium'
+							color: #000
+							transition: all 0.5s
+							&:hover
+								font-size: 1.05em
+								transition: all 0.5s
+								color: grey					
+	
+	#footer
+		.wrap
+			.callback_wrapper
+				margin-left: 0%
+				background-color: $main_color
+				text-align: center
+				position: relative
+				.callback_form
+					width: 100%
+					height: 9%
+					.form_title
+						width: 90%
+						margin-left: 5%
+						.p_text
+							font-size: 1.0em
+						.text_2
+							font-size: 1.0em
+					.form_send
+						.input
+							width: 200px
+							height: 50px
+							margin: 1% 1%	
+							font-size: 1.0em
+							&::placeholder
+								font-size: 14px
+								// padding-left: 15px
+			.footer_wrapper
+				background-image: url("../img/footer.jpg")
+				background-size: 100% 100%
+				// background-color: red
+				// text-align: center
+				width: 100%
+				height: 200px
+				// height: 60%				
+				.input_submit
+					// margin-left: 3%
+					margin-top: 1.5%
+					width: 200px
+					height: 50px
+					border: none
+					background-color: $main_color
+					color: #fff
+					font-size: 0.8em
+					cursor: pointer
+					font-family: 'Roboto-Bold'
+				.socials
+					// background-color: red
+					position: absolute
+					left: 0
+					right: 0
+					width: 240px
+					margin: 75px auto
+					text-align: center
+					display: inline-block
+					.soc_link
+						float: left
+						margin: 0px 10px
+						.soc_img
+							width: 40px
+							height: 40px
+				.tels
+					position: absolute
+					left: 0
+					right: 0
+					margin: auto
+					width: 100%
+					height: 7%
+					margin-top: 75px
+					// margin-top: 2%
+					.phone
+						display: none
+					.left_tel
+						float: left
+						// background-color: black
+						width: 100%
+						height: 100%
+						border-right: 0px solid $main_color
+						.child	
+							display: inline-block
+							vertical-align: middle
+							.p_text
+								text-align: center
+								text-decoration: none
+								outline: none
+								color: #fff
+								// width: 80%
+								float: right
+								font-size: 1.0em
+								letter-spacing: 1.3px
+								font-family: 'EuropeDemi'
+					.right_tel
+						height: 100%
+						float: left
+						// background-color: yellow
+						width: 100%
+						border-right: 0px solid $main_color
+						.child
+							vertical-align: middle
+							display: inline-block
+							.p_text
+								text-align: center
+								// width: 80%
+								text-decoration: none
+								outline: none
+								color: #fff
+								float: right
+								font-size: 1.0em
+								letter-spacing: 1.3px
+								font-family: 'EuropeDemi'
+				.city
+					display: none
+					// background-color: red
+					position: absolute
+					margin: auto
+					// bottom: 5%
+					left: 0
+					right: 0
+					margin-top: 20%
+					// top: 0%
+					.city_p
+						font-size: 1.4em
+						font-family: 'Roboto-Bold'
+						color: $main_color					
+
+	.popup_success
+		height: 100%
+		width: 100%
+		position: fixed
+		margin: auto
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background-color: rgba(255, 255, 255, 0.9)
+		z-index: 999
+		.success_box
+			width: 90%
+			// height: 30%
+			.p_text_success
+				margin: auto
+				font-family: 'Roboto-Bold'
+				color: #fff	
+				font-size: 1.2em

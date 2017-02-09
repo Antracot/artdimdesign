@@ -1,0 +1,325 @@
+@media (max-width: 1600px){
+	#header .menu_enjoy .soc_icons{
+		margin-left: 20%;
+	}
+
+	#header .slider .top_header .top_cont2 .top_cont2_wrap .child .p_text{
+		font-size: 1.3em;
+	}
+	#header .slider .top_header .top_cont3 .top_cont3_wrap .child .p_text{
+		font-size: 1.3em;
+	}
+	#header .slider .top_header .top_cont4 .wrap_top_cont4 .child .p_text{
+		font-size: 1.2em;
+	}
+	#header .wrap .menu .menu_cont .menu_list .menu_item .menu_text{
+		font-size: 1.2em;
+	}
+
+	.title_wrapper .page_title .page_name .p_text{
+		font-size: 2.0em;
+	}
+
+	#page3 .wrap .page3_cont_wrapper .cont_for_details .p_details{
+		font-size: 1.0em;
+	}
+	#page6 .wrap .content_wrap .item_cont .item_text_page6 .item_text_page6_ptext{
+		font-size: 0.8em;
+	}
+	#page6 .wrap .content_wrap2 .item_cont .item_text_page6 .item_text_page6_ptext{
+		font-size: 0.8em;
+	}
+	#header .menu_enjoy .menu .menu_link .textes .text_link{
+		font-size: 1.4em;
+	}
+	#header .menu_enjoy .menu .menu_link .text_hover .text_link_hover {
+		font-size: 1.4em;
+	}
+	#page7 .wrap .title_wrapper .page_name{
+		width: 50%;
+	}
+	#page7 .wrap .title_wrapper .white_line_right{
+		width: 50%;
+		}
+	#page7 .wrap .right_item .p_text{
+		font-size: 1.2em;
+	}
+	#page7 .wrap .page7_footer .img_footer{
+		height: 81%;
+	}
+	#page8 .wrap .page_title_wrap .page_title{
+		font-size: 1.8em;
+	}
+	#page8 .wrap .page_title_wrap .text .p_text{
+		font-size: 1.2em;
+	}
+	#page8 .wrap .page_title_wrap .text{
+		margin-left: 13.5%;
+	}
+	/*#page3 .wrap .go_top{
+		right: 0%;
+	}*/
+	#page3 .wrap .go_top .go_top_img{
+		width: 27%;
+	}
+	#page8 .wrap .callback_form .form_title{
+		padding-top: 2%;
+	}
+	#header .menu_enjoy .menu .soc_icons .soc_icon_img{
+		/*margin: 0% -3.5% */
+	}
+	#page8 .wrap .callback_form .form_title .p_text{
+		font-size: 1.4em;
+	}
+	#page8 .wrap .callback_form .form_title .text_2{
+		font-size: 1.8em;
+	}
+
+	.popup_store .popup_store_box .rigth_info_cont .wrap_infos .price .price_text{
+		font-size: 1.2em;
+	}
+	.popup_store .popup_store_box .rigth_info_cont .wrap_infos .in_stock .item_in_stock .price_text{
+		font-size: 1.2em;
+	}
+
+	#footer .wrap .footer_wrapper .tels .left_tel .child .p_text, #footer .wrap .footer_wrapper .tels .right_tel .child .p_text{
+		font-size: 1.4em;
+	}
+	#footer .wrap .footer_wrapper .city .city_p{
+		font-size: 1.6em;
+	}
+	.popup_store .popup_store_box .top_cont_arr .line{
+		width: 45%;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1366px){
+
+/********************PAGE HEADER********************/
+	#header .menu_enjoy .soc_icons{
+		margin-left: 12%;	
+	}
+	#header .wrap .menu .menu_cont .menu_list .menu_item .menu_text{
+		font-size: 1.0em;
+	}
+	#header .menu_enjoy .menu .menu_link .textes .text_link{
+		font-size: 1.2em;
+	}
+	#header .menu_enjoy .menu .menu_link .text_hover .text_link_hover{
+		font-size: 1.2em;
+	}
+
+	#header .slider .top_header .top_cont1 .wrap_top_cont1 .p_text{
+		font-size: 1.0em;
+	}
+	#header .slider .top_header .top_cont2 .top_cont2_wrap .child .p_text, #header .slider .top_header .top_cont3 .top_cont3_wrap .child .p_text{
+		font-size: 1.0em;
+	}
+	#header .slider .top_header .top_cont2 .top_cont2_wrap .child .p_text, #header .slider .top_header .top_cont3 .top_cont3_wrap .child .p_text{
+		font-size: 1.0em;
+	}
+	#header .slider .top_header .top_cont4 .wrap_top_cont4 .child .p_text{
+		font-size: 1.0em;
+	}
+	#header .slider .top_header .top_cont4 .wrap_top_cont4 .child .p_text .second_word{
+		letter-spacing: 1.5px
+	}
+
+	#page2 .wrap .page_wrapper .page2_content .p_text_cont{
+		font-size: 1em;
+	}
+
+	#page2 .wrap .title_wrapper .page2_title .page_name .p_text{
+		font-size: 1.6em;
+
+	}
+	#page2 .wrap .page2_content .p_text_cont{
+		font-size: 1.0em;
+	}
+
+	#page3 .wrap .title_wrapper .page2_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+
+	#page3 .wrap .page3_cont_wrapper .item_cont_page3 .hover_cont .cont .p_text{
+		font-size: 0.8em;
+	}
+	#page3 .wrap .page3_cont_wrapper .item_cont_page3 .hover_cont_details .p_details{
+		margin: 1% 1%;
+		font-size: 0.8em;
+	}
+	#page3 .wrap .page3_cont_wrapper .cont_for_details .p_details{
+		font-size: 0.9em;
+	}
+	#page3 .wrap .page3_cont_wrapper .cont_for_details2 .p_details{
+		font-size: 0.9em;
+	}
+	#page3 .wrap .page3_cont_wrapper .item_cont_page3 .hover_cont .cont_page3 .p_text{
+		font-size: 0.8em;
+	}
+	.title_wrapper .page_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+	#header .menu_enjoy .menu .menu_link .text_hover .text_link_hover{
+		font-size: 1.2em;
+	}
+	#page4 .wrap .title_wrapper .page2_title .page_name .p_text, #page5 .wrap .title_wrapper .page5_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+	#page5 .wrap .page5_cont .item_left .right_cont .child .child_text, #page5 .wrap .page5_cont .item_right .right_cont .child .child_text{
+		font-size: 1.0em;
+	}
+	#page5 .wrap .page5_cont .item_left{
+		width: 46%;
+	}
+
+	#page6 .wrap .title_wrapper .page6_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+	#page6 .wrap .cont_text .p_text{
+		font-size: 1.2em;
+	}
+	#page6 .wrap .cont_title .p_text{
+		font-size: 1.8em;
+	}
+	#page6 .wrap .content_wrap .item_cont{
+		height: 120%;
+	}
+	#page6 .wrap .content_wrap2 .item_cont{
+		height: 120%;
+	}
+	#page6 .wrap .content_wrap .item_cont .p_text{
+		font-size: 0.75em;
+	}
+	#page7 .wrap .title_wrapper .page7_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+	#page7 .wrap .right_item .p_text{
+		font-size: 1.0em;
+	}
+	#page7 .wrap .right_item .p_akciya{
+		font-size: 1.6em;
+	}
+	#page6 .wrap .content_wrap .item_cont .item_text_page6 .item_text_page6_ptext{
+		font-size: 0.7em;
+	}
+	#page6 .wrap .content_wrap2 .item_cont .item_text_page6 .item_text_page6_ptext{
+		font-size: 0.7em;
+	}
+	#page8 .wrap .title_wrapper .page8_title .page_name .p_text{
+		font-size: 1.6em;
+	}
+	#page8 .wrap .garden_store .store_wrap .item_wrap .item_title .p_text{
+		font-size: 0.8em;	
+	}
+	#page8 .wrap .page_title_wrap .page_title{
+		font-size: 1.6em;
+	}
+	#page8 .wrap .page_title_wrap .text .p_text{
+		font-size: 1.1em;
+	}
+	#page8 .wrap .page_title_wrap .text .p_text{
+		font-size: 0.8em;
+	}
+	#page8 .wrap .garden_store .store_wrap .item_wrap .buttons .left_btn{
+		font-size: 0.8em;
+	}
+	#page8 .wrap .garden_store .store_wrap .item_wrap .buttons .right_btn{
+		font-size: 0.8em;
+	}
+	#page8 .wrap .callback_form .form_title .p_text{
+		font-size: 1.0em;
+	}
+	#page8 .wrap .callback_form .form_title .text_2{
+		font-size: 1.6em;
+	}
+	#page8 .wrap .page_title_wrap .page_title{
+		font-size: 1.4em;
+		letter-spacing: 5.9px;
+	}
+	#page8 .wrap .page_title_wrap .text{
+		margin-left: 19.5%;
+	}
+	#page8 .wrap .page_title_wrap{
+		margin-left: -1%;
+	}
+	#footer .wrap .wrap_footer .input{
+		font-size: 1.2em;
+	}
+	.popup_store .popup_store_box .top_cont_arr .line{
+		width: 40%;
+	}
+	#page3 .wrap .go_top{
+		/*right: -8.1%;*/
+	}
+	#page3 .wrap .go_top .go_top_img{
+		width: 23%;
+	}
+
+	#footer .wrap .wrap_footer .socials{
+		width: 17%;
+	}
+	#footer .wrap .wrap_footer .tels .left_tel .child .p_text{
+		font-size: 1.2em;
+	}
+	#footer .wrap .wrap_footer .tels .right_tel .child .p_text{
+		font-size: 1.2em;
+	}
+	.popup_store .popup_store_box .rigth_info_cont .wrap_infos .price .price_text{
+		font-size: 1.0em;
+	}
+	.popup_store .popup_store_box .rigth_info_cont .wrap_infos .in_stock .item_in_stock .price_text{
+		font-size: 1.0em;
+	}
+	#footer .wrap .wrap_footer .city .city_p{
+		font-size: 1.4em;
+	}
+	#footer .wrap .callback_wrapper .callback_form .form_title .p_text{
+		font-size: 1.4em;
+	}
+	#footer .wrap .callback_wrapper .callback_form .form_title .text_2{
+		font-size: 1.6em;
+	}
+	#footer .wrap .footer_wrapper .tels .left_tel .child .p_text, #footer .wrap .footer_wrapper .tels .right_tel .child .p_text{
+		font-size: 1.2em;
+	}
+	#footer .wrap .footer_wrapper .socials{
+		width: 18%
+	}
+	#page3 .wrap .go_top{
+		bottom: 10%;
+	}
+	#page3 .wrap .go_top .go_top_link{
+		/*margin-left: 10%;*/
+	}
+	.popup_store .popup_store_box{
+		width: 55%;
+		height: 75%;
+	}
+
+}
+
+
+

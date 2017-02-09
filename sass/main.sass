@@ -1,0 +1,1400 @@
+@import "vars.sass"
+
+.green_color
+	color: $main_color
+	display: inline-block
+
+.page4_popup_pic
+	height: 100%
+	width: 100%
+	position: fixed
+	margin: auto
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	background-color: rgba(178, 178, 178, 0.7)
+	z-index: 150
+	.popup_box
+		background-color: #fff
+		width: 80%
+		height: 85%
+		margin: auto
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		text-align: center
+		z-index: 20
+		.img_portfolio
+			margin-top: 1%
+			margin-left: 1%
+			width: 98%
+			height: 96%
+			// background-color: grey
+			.arr_left
+				width: 10%
+				height: 10%
+				position: absolute
+				top: 0%
+				bottom: 0%
+				left: 0%
+				margin: auto
+			.arr_right
+				width: 10%
+				height: 10%
+				position: absolute
+				top: 0%
+				bottom: 0%
+				position: absolute
+				right: 0%
+				margin: auto
+			.close_btn
+				// opacity: 0.7
+				width: 3%
+				height: 5%
+				position: absolute
+				top: 3%
+				// bottom: 0%
+				position: absolute
+				right: 1.5%
+				margin: auto
+				.close_btn_img
+					border: 1px solid grey
+					background-color: grey
+					width: 60%
+					height: 70%	
+			.img_big
+				width: 100%
+				height: 100%
+.popup_store
+	height: 100%
+	width: 100%
+	position: fixed
+	margin: auto
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	background-color: rgba(178, 178, 178, 0.7)
+	z-index: 150
+	.popup_store_box
+		background-color: #fff
+		width: 720px
+		height: 470px
+		margin: auto
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		text-align: center
+		z-index: 20
+		.top_cont_arr
+			// opacity: 0.8
+			width: 100%
+			height: 10%
+			// background-color: black
+			.arr_back
+				margin-left: 25px
+				margin-top: 25px
+				float: left
+			.back_link
+				float: left
+				margin-top: 23px
+				margin-left: 3%
+				color: $main_color 
+				text-decoration: none
+				outline: none 
+			.line
+				// margin-top: -0.5%
+				margin-left: 3.5% 
+				float: left
+				height: 35px
+				width: 50%
+				border-bottom: 2px solid $main_color
+				// margin-top: 0.5%
+			.close_x_btn
+				float: right
+				margin-top: 20px
+				margin-right: 3%
+				.close_x_img
+					width: 30px		
+		.left_pic_cont
+			float: left
+			margin-top: 2%
+			// background-color: red
+			// opacity: 0.8
+			width: 55%
+			height: 100%
+			// height: 90%
+			.img_item
+				float: right
+				margin-top: 0%
+				// margin-left: 11%
+				width: 100%
+				height: 100%
+				// height: 70%
+				// background-color: blue
+				.img_item_size
+					border: 1px solid #999
+					width: 85%
+					// height: 50%
+		.rigth_info_cont
+			float: right
+			// background-color: green
+			// opacity: 0.8
+			width: 45%
+			// height: 90%
+			text-align: left
+			margin-top: 10px
+			.wrap_infos
+				// width: 100%
+				// height: 100%
+				margin-left: 5%
+				// margin-right: 10%
+				.title_item
+					width: 90%
+					// background-color: red
+					// margin-bottom: 5%
+					font-size: 1.4em
+					color: #000
+					letter-spacing: 1.5px
+					font-family: 'Roboto-Bold'
+					text-transform: uppercase
+				.price
+					float: left
+					margin-top: 10%
+					width: 150px
+					height: 50px
+					background-color: $main_color
+					display: inline-block
+					text-align: center
+					.price_text
+						// padding-top: 10%
+						// padding-bottom: 10%
+						color: #fff
+						font-family: 'Roboto-Medium'
+						font-size: 1.4em
+						text-align: center
+						vertical-align: middle
+						display: inline-block
+					.helper
+						display: inline-block
+						vertical-align: middle
+						width: 0px
+						height: 100%
+				.in_stock
+					// float: left
+					// margin-top: 5%
+					width: 50%
+					height: 8%
+					// background-color: blue
+					// background-color: $main_color
+					display: block
+					text-align: left
+					.item_in_stock
+						margin-left: 10%
+						width: 100%
+						height: 100%
+						// background-color: forestgreen
+						float: left
+						.price_text
+							padding-top: 5%
+							padding-bottom: 5%
+							// color: forestgreen
+							color: forestgreen
+							font-family: 'Roboto-Medium'
+							font-size: 1.4em
+							text-align: left
+				.descr
+					margin: 7% 0% 10% 0%
+					display: inline-block
+					width: 80%		
+					.text_info
+						font-family: 'Roboto-Medium'
+						font-size: 0.8em
+						color: #000
+						text-align: justify			
+				.buy_btn
+					// margin-top: 5%
+					// margin-left: 30%
+					width: 150px
+					height: 50px
+					background-color: $main_color
+					display: block
+					text-align: center
+					outline: none
+					transition: all 0.25s
+					cursor: pointer
+					&:hover
+						transform: scale(1.02)
+						transition: all 0.25s
+						background-color: $second_bg
+					.price_text
+						display: inline-block
+						vertical-align: middle
+						color: #fff
+						font-family: 'Roboto-Medium'
+						font-size: 1.6em
+						text-align: center
+						transition: all 0.25s
+						&:hover
+							transition: all 0.25s
+							color:  $main_color
+					.helper
+						display: inline-block
+						vertical-align: middle
+						width: 0px
+						height: 100%			
+				.infos
+					margin-top: 5%		
+					.text_info
+						font-family: 'Roboto-Medium'
+						font-size: 1.2em
+						color: #000
+	
+.title_wrapper
+	margin-left: 8%
+	width: 81.7%
+	height: 75px
+	line-height: 65px
+	.page_icon
+		width: 5%
+		height: 100%
+		float: left
+		margin-top: 48px
+		.page_icon_img
+			width: 100%
+	.page_title
+		margin-top: 50px
+		float: right
+		width: 91.4%
+		height: 85%
+		background-color: $main_color
+		.page_name
+			width: 31%
+			float: left
+			.p_text
+				padding-left: 7%
+				letter-spacing: 1.5px
+				font-family: 'Roboto-Bold'
+				font-size: 2.4em
+		.white_line_right
+			float: right
+			background-color: $menu_bg
+			width: 69%
+			height: 79%
+		.second_bg
+			background-color: $left_col	
+
+#page2
+	background-color: $menu_bg
+	.wrap
+		width: 100%
+		height: 100%
+		.page_wrapper
+			margin-top: 0%
+			.page2_content
+				width: 75%
+				margin-left: 14.6%
+				.p_text_cont
+					margin-top: 6%
+					margin-left: 1%
+					font-family: 'Roboto-Regular'
+					font-size: 1.2em
+					letter-spacing: 0.2px
+					line-height: 1.45em
+					color: #000
+					text-align: justify
+			.pics_content
+				margin-top: 1%
+				margin-left: 14.6%
+				width: 75%
+				height: 50%
+				.pic_wrapper
+					width: 100%
+					height: 100%
+					text-align: center
+					.pic_down
+						width: 90%
+
+#page3
+	// height: 300px
+	// width: 500px
+	background-color: $left_col
+	.wrap
+		width: 100%
+		height: 100%
+		overflow: hidden 
+		.page3_cont_wrapper
+			padding-top: 6.3%
+			margin-left: 8%
+			width: 82.2%
+			height: 79%
+			.arr_trangle_hidden
+				position: absolute
+				width: 2%
+				height: 2%
+				top: -9999%
+				left: -9999%
+			.page3_cont_hid
+				z-index: 300
+				// opacity: 0.8
+				background-color: rgba(0,0,0,0.8)
+				width: 100%
+				height: 100%
+				position: fixed
+				top: 0%
+				left: 0%
+				right: 0%
+				bottom: 0%
+				margin: auto
+				.close_btn
+					z-index: 100	
+					position: absolute
+					top: 8%
+					right: 3%
+					width: 40px
+					height: 40px
+				.page3_item_text
+					width: 80%
+					height: 70%
+					overflow: auto
+					margin: auto
+					position: absolute
+					top: 0 
+					left: 0 
+					bottom: 0 
+					right: 0
+					// background-color: red
+					// opacity: 0.5
+					text-align: center
+					.p_details_mob
+						font-family: 'Roboto-Regular'
+						padding: 5% 5% 
+						font-size: 1.2em
+						text-align: justify
+
+			.item_cont_page3
+				margin: 0.7% 0.7% 0% 0%
+				width: 24.3%
+				height: 50%
+				float: left
+				background-size: cover
+				position: relative
+				.hover_cont
+					position: absolute
+					top: 0%
+					bottom: 0%
+					margin: auto
+					left: 0%
+					right: 0%
+					width: 100%
+					height: 100%
+					background-color: rgba(0, 0, 0, 0.3)
+					.cont_page3
+						// width: 75%	
+						height: 60%
+						position: absolute
+						top: 0%
+						bottom: 0%
+						margin: auto
+						left: 0%
+						right: 0%
+						overflow: hidden
+						text-align: center
+						cursor: pointer
+						// background-color: red
+						.services_icon
+							width: 30%
+						.lit_margin1
+							margin-left: 8% 
+						.lit_margin2
+							margin-left: 4%	
+						.p_text
+							font-size: 1.0em
+							text-transform: uppercase
+							font-family: 'Roboto-Medium'
+					.serv_arrow
+						position: absolute
+						bottom: 20%
+						left: 0
+						right: 0
+						margin: auto
+						transition: all .5s
+				.hover_cont_details
+					z-index: 15
+					background-color: $main_color
+					opacity: 0.3
+					position: absolute
+					top: 0%
+					bottom: 0%
+					margin: auto
+					left: 0%
+					right: 0%
+					width: 100%
+					height: 100%
+					cursor: pointer
+					.p_details
+						padding: 5% 10% 
+						font-size: 1.2em
+						text-align: justify
+			.cont_for_details
+				float: left
+				// margin-top: 22%
+				width: 99.5%
+				// height: 20%
+				background-color: $main_color
+				.close_btn_details
+					position: absolute
+					margin-top: 0.3%
+					right: 10.3%
+					width: 1%
+					cursor: pointer					
+				.arr_trangle
+					position: absolute
+					margin-top: -0.8%
+					// margin-left: 0px 
+					display: block
+					width: 2%
+					height: 2%
+					// display: none
+					// background-color: red
+				.p_details
+					padding: 0.2% 0.8% 0.2% 0.2%
+					font-size: 1.0em
+					text-align: justify
+					font-family: 'Roboto-Regular'
+			.cont_for_details2
+				float: left
+				width: 99.5%
+				// height: 20%
+				background-color: $main_color
+				// overflow-x: visible
+				.close_btn_details
+					position: absolute
+					margin-top: 0.3%
+					right: 10.3%
+					width: 1%
+					cursor: pointer					
+				.arr_trangle
+					position: absolute
+					margin-top: -0.8%
+					// margin-left: 0px 
+					display: block
+					width: 2%
+					height: 2%
+					// display: none
+					// background-color: red
+				.p_details
+					padding: 0.2% 0.8% 0.2% 0.2%
+					font-size: 1.0em
+					text-align: justify
+					font-family: 'Roboto-Regular'		
+
+				
+		
+			#service_pic1
+				background-image: url("../img/services_pic1.jpg")
+			#service_pic2		
+				background-image: url("../img/services_pic2.jpg")
+			#service_pic3	
+				background-image: url("../img/services_pic3.jpg")
+			#service_pic4	
+				background-image: url("../img/services_pic4.jpg")
+			#service_pic5	
+				background-image: url("../img/services_pic5.jpg")
+			#service_pic6	
+				background-image: url("../img/services_pic6.jpg")
+			#service_pic7	
+				background-image: url("../img/services_pic7.jpg")
+			#service_pic8	
+				background-image: url("../img/services_pic8.jpg")
+		.callack_fixed
+			// position: fixed
+			// right: 5.1%
+			// margin-top: -32.5%
+			// margin-left: 1%
+			// float: left
+			display: none
+			position: absolute
+			right: 1%
+			top: 205%
+			width: 4%
+			height: 9%
+			cursor: pointer
+			.callback_fix
+				width: 100%
+		.go_top
+			width: 4%
+			height: 6% 
+			// background-color: red
+			display: none
+			// top: 85%
+			position: fixed
+			right: 1%
+			bottom: 5%
+			margin: auto
+			z-index: 100
+			cursor: pointer
+			.go_top_link
+				margin-left: 5%
+				.go_top_img	
+					width: 100%
+					// height: 100%
+#page4
+	// background-image: url("../img/dummy/page4.png")
+	background-color: $menu_bg
+	background-repeat: no-repeat
+	background-size: 95%
+	// background-position: left
+	// background-position: 13px
+	// background-size: 1920px 950px 
+	// height: 300px
+	// width: 500px
+	// background-color: blue
+	.wrap
+		width: 100%
+		height: 100%
+		.page4_cont
+			// background-color: red
+			width: 81.7%
+			height: 78%
+			margin-left: 8%
+			margin-top: 4%
+			// opacity: 0.4
+			position: absolute
+			.item_cont
+				float: left
+				margin: 0% 0% 1% 1%
+				width: 19%
+				height: 22.3%
+				background-color: black
+				.item_link
+					.item_img
+						border: 1px solid #aaa
+						width: 100%
+						height: 100%
+			.item_cont_next
+				float: left
+				margin: 0% 2.0% 1.5% 0%
+				width: 18%
+				height: 22.3%
+				background-color: transparent
+				// border: 1px solid #000
+				text-align:  center
+				.next_text
+					color: #000
+					display: inline-block
+					vertical-align: middle
+					font-size: 1.2em
+					font-family: 'Roboto-Bold'
+					cursor: pointer
+					transition: all .5s
+					&:hover
+						transition: all .5s
+						color: grey
+				.helper
+					display: inline-block
+					vertical-align: middle
+					width: 0px
+					height: 100%
+		.mobile_gallery_wrapper
+			width: 100%
+			// height: 235px
+			// background-color: red
+			.slider_bx
+				width: 100%
+				height: 100%
+				// max-width: 1200px
+				margin: -4% auto
+				z-index: 5
+				.bxslider_mob
+					background: none
+					border: none
+					box-shadow: none
+					.slide_mobile
+						// min-height: 300px
+						// height: 250px
+						width: 100%
+						cursor: pointer
+						// max-width: 500px
+						margin: 0px auto
+						color: #000	
+					li
+						list-style-type: none
+				.bx-pager
+					display: none
+				.bx-prev
+					z-index: 5 
+					// margin-top: -20%
+					// margin-left: 3%
+					width: 41px
+					height: 42px
+					background: url(../img/arr_left.png)
+				.bx-next
+					z-index: 5 
+					// margin-top: -20%
+					// margin-right: 3%
+					width: 41px
+					height: 42px
+					background: url(../img/arr_right.png)
+				#slide1_mob
+					background-image: url("../img/gallery/portfolio_pic1.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide2_mob
+					background-image: url("../img/gallery/portfolio_pic2.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide3_mob
+					background-image: url("../img/gallery/portfolio_pic3.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide4_mob
+					background-image: url("../img/gallery/portfolio_pic4.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide5_mob
+					background-image: url("../img/gallery/portfolio_pic5.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide6_mob
+					background-image: url("../img/gallery/portfolio_pic6.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide7_mob
+					background-image: url("../img/gallery/portfolio_pic7.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide8_mob
+					background-image: url("../img/gallery/portfolio_pic8.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat	
+				#slide9_mob
+					background-image: url("../img/gallery/portfolio_pic9.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide10_mob
+					background-image: url("../img/gallery/portfolio_pic10.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide11_mob
+					background-image: url("../img/gallery/portfolio_pic11.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide12_mob
+					background-image: url("../img/gallery/portfolio_pic12.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide13_mob
+					background-image: url("../img/gallery/portfolio_pic13.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide14_mob
+					background-image: url("../img/gallery/portfolio_pic14.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide15_mob
+					background-image: url("../img/gallery/portfolio_pic15.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide16_mob
+					background-image: url("../img/gallery/portfolio_pic16.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide17_mob
+					background-image: url("../img/gallery/portfolio_pic17.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide18_mob
+					background-image: url("../img/gallery/portfolio_pic18.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide19_mob
+					background-image: url("../img/gallery/portfolio_pic19.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide20_mob
+					background-image: url("../img/gallery/portfolio_pic20.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide21_mob
+					background-image: url("../img/gallery/portfolio_pic21.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide22_mob
+					background-image: url("../img/gallery/portfolio_pic22.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide23_mob
+					background-image: url("../img/gallery/portfolio_pic23.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide24_mob
+					background-image: url("../img/gallery/portfolio_pic24.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide25_mob
+					background-image: url("../img/gallery/portfolio_pic25.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide26_mob
+					background-image: url("../img/gallery/portfolio_pic26.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide27_mob
+					background-image: url("../img/gallery/portfolio_pic27.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide28_mob
+					background-image: url("../img/gallery/portfolio_pic28.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide29_mob
+					background-image: url("../img/gallery/portfolio_pic29.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide30_mob
+					background-image: url("../img/gallery/portfolio_pic30.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide31_mob
+					background-image: url("../img/gallery/portfolio_pic31.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide32_mob
+					background-image: url("../img/gallery/portfolio_pic32.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat
+				#slide33_mob
+					background-image: url("../img/gallery/portfolio_pic33.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat	
+				#slide34_mob
+					background-image: url("../img/gallery/portfolio_pic34.jpg")
+					background-size: 100% 100%
+					background-repeat: no-repeat																															
+
+#page5
+	background-color: $left_col 
+	// height: 300px
+	// width: 500px
+	// background-color: blue
+	.wrap
+		width: 100%
+		height: 100%
+		.page5_cont
+			margin-top: 5.5%
+			margin-left: 15%
+			width: 75.5%
+			height: 72%
+			// background-color: brown
+			// opacity: 0.6
+			.item_left
+				float: left
+				width: 47%
+				height: 31.5%
+				// background-color: blue
+				.left_cont
+					float: left
+					// background-color: red
+					width: 35%
+					height: 100%
+					.item_img_left
+						width: 100%
+						height: 100%
+				.arrow_between
+					margin-left: -8%
+					float: left
+					width: 8%
+					height: 100%
+					.trangle
+						width: 100%
+						vertical-align: middle
+						margin-top: 110%
+				.right_cont
+					float: right
+					width: 65%
+					height: 100%
+					// background-color: black
+					text-align: left
+					position: relative
+					.child
+						margin-top: 0%
+						margin-left: 5%
+						margin-right: 2%
+						.child_text
+							display: inline-block
+							vertical-align: middle
+							// background-color: blue
+							font-size: 1.2em
+							font-family: 'Roboto-Regular'
+				.bg_orange
+					background-color: $item_orange
+				.bg_green
+					background-color: $main_color		
+			.item_right
+				margin-right: 1%
+				float: right
+				width: 47%
+				height: 31.5%
+				// background-color: green
+				.left_cont
+					float: left
+					// background-color: red
+					width: 35%
+					height: 100%
+					.item_img_left
+						width: 100%
+						height: 100%
+				.arrow_between
+					margin-left: -8%
+					float: left
+					width: 8%
+					height: 100%
+					.trangle
+						width: 100%
+						vertical-align: middle
+						margin-top: 110%
+				.right_cont
+					float: right
+					width: 65%
+					height: 100%
+					text-align: left
+					position: relative
+					// background-color: $item_orange
+					.child
+						margin-top: 0%
+						margin-left: 5%
+						margin-right: 2%
+						.child_text
+							display: inline-block
+							vertical-align: middle
+							// background-color: blue
+							font-size: 1.2em
+							font-family: 'Roboto-Regular'
+				.bg_orange
+					background-color: $item_orange
+				.bg_green
+					background-color: $main_color
+			.mar_top
+				margin-top: 1.0%
+
+#page6
+	background-color: $menu_bg
+	// height: 300px
+	// width: 500px
+	.wrap
+		width: 100%
+		height: 100%
+		.title_wrapper
+			.page_title
+				width: 91.4%
+				.page_name
+					width: 33%
+				.white_line_right
+					width: 67%
+		.cont_text
+			// background-color: red
+			margin-top: 3%
+			margin-left: 15%
+			width: 74.7%
+			height: 13%
+			.p_text
+				font-size: 1.4em
+				font-family: 'Roboto-Regular'
+				color: #000
+				text-align:  justify
+		.cont_title
+			margin-top: 1.5%
+			height: 15%
+			// background-color: yellow
+			.p_text
+				color: $main_color
+				font-size: 2.0em
+				font-family: 'Roboto-Medium'
+				text-transform: uppercase
+				text-align: center
+				letter-spacing: 4.0px
+		.numbers
+			background-color: brown
+			width: 75.5%
+			height: 5%
+		.content_wrap
+			width: 75.5%
+			margin-top: -2%
+			margin-left: 14%
+			height: 16%	
+			// background-color: black
+			.item_cont
+				border-top: 5px solid $main_color
+				text-align: center
+				background-color: $left_col
+				width: 20%
+				height: 110%
+				float: left
+				margin: 0% 10%
+				margin-right: 1.5%
+				position: relative
+				.numbs
+					position: absolute
+					top: -15%
+					left: 0%
+					right: 0%
+					margin: auto
+					width: 14%
+					height: 25%
+					border-radius: 100%
+					background-color: $main_color
+					.numb_text
+						margin-top: 15%
+						font-size: 1.2em
+						font-family: 'Roboto-Regular'
+				.item_text_page6
+					// background-color: blue
+					height: 100%
+					margin-top: 0%
+					.item_text_page6_ptext
+						// background-color: red
+						margin: 0% 5% 0% 5%
+						font-size: 1.0em
+						font-family: 'Roboto-Medium'
+						color: #000
+		.content_wrap2
+			width: 75.5%
+			margin-top: 5%
+			margin-left: 15%
+			height: 16%	
+			// background-color: black
+			.item_cont
+				border-top: 5px solid $main_color
+				text-align: center
+				background-color: $left_col
+				width: 20%
+				height: 110%
+				float: left
+				margin: 0% 24%
+				margin-right: -12%
+				position: relative
+				.numbs
+					position: absolute
+					top: -15%
+					left: 0%
+					right: 0%
+					margin: auto
+					width: 14%
+					height: 25%
+					border-radius: 100%
+					background-color: $main_color
+					.numb_text
+						margin-top: 15%
+						font-size: 1.2em
+						font-family: 'Roboto-Regular'
+				.item_text_page6
+					height: 100%
+					// background-color: blue
+					.item_text_page6_ptext
+						margin: 0% 5% 0% 5%
+						font-size: 1.0em
+						font-family: 'Roboto-Medium'
+						color: #000
+
+#page7
+	background-color: $left_col
+	// height: 300px
+	// width: 500px
+	.wrap
+		width: 100%
+		height: 100%
+		overflow: hidden
+		.title_wrapper
+				.page_name
+					width: 100%
+				// .white_line_right
+				// 	width: 100%
+				// 	height: 79%		
+		.left_item
+			margin-top: 3%
+			margin-left: 3% 
+			width: 17%
+			// height: 30%
+			float: left			
+			// background-color: green
+			// opacity: 0.7
+			.img_proc
+				width: 100%
+				height: 100%	
+		.right_item
+			margin-top: 2%
+			margin-left: 2.7%
+			float: left			
+			width: 55.3%
+			// height: 53%
+			// background-color: green
+			// opacity: 0.7
+			.p_text
+				margin: 0% 1% 
+				font-family: 'Roboto-Regular'
+				font-size: 1.4em
+				text-align: justify
+				color: #000
+			.p_akciya
+				margin-top: 2.5%
+				margin-bottom: 2.5%
+				margin-left: 1%
+				color: $main_color
+				font-size: 2.0em
+				text-transform: uppercase
+				font-family: 'Roboto-Medium'
+		.page7_footer
+			float: left
+			margin-top: 1.8%
+			margin-left: 10.1%
+			width: 75.4%
+			// height: 50%
+			text-align: center
+			// background-color: $main_color
+			.white_block
+				// position: absolute
+				// background-color: red
+				background-color: $left_col
+				width: 26.5%
+				height: 50%
+			.img_footer
+				border: 10px solid $main_color
+				// margin-top: -15.3%
+				width: 100%
+				// height: 100%
+				// height: 200%
+#page8
+	background-color: $menu_bg
+	// height: 300px
+	// width: 500px
+	overflow: hidden
+	.wrap
+		width: 100%
+		height: 100%
+		.title_wrapper
+			.page_title
+				.page_name
+					width: 42%
+				.white_line_right
+					width: 58%
+		.page_title_wrap
+			margin-top: 3.5%
+			margin-left: 3%
+			width: 90%
+			height: 6%
+			// background-color: black
+			// opacity: 0.6
+			text-align: center
+			.page_title
+				color: $main_color
+				// background-color: red
+				font-size: 2.2em
+				letter-spacing: 6.9px
+				text-transform: uppercase
+				font-family: 'Roboto-Bold'
+				// background-color: red
+				width: 100%
+				height: 25%
+				margin-left: 5.2%
+			.text
+				// background-color: #FFF
+				// margin-left: 14.5%
+				width: 80%
+				margin-top: 1.5%
+				margin-left: 15%
+				text-align: left
+				.p_text	
+					font-size: 1.4em
+					font-family: 'Roboto-Regular'
+					letter-spacing: 1.0px
+					color: #000
+					text-align: justify
+		.garden_store
+			width: 100%
+			margin-left: 0.5%
+			// height: 84%
+			// background-color: blue
+			// opacity: 0.7
+			text-align: center
+			.store_wrap
+				display: inline-block
+				width: 75%
+				height: 100%
+				// background-color: green
+				.item_wrap
+					margin-top: 3.5%
+					margin-right: 4% 
+					// background-color: pink
+					width: 22%
+					height: 16%
+					float: left
+					// border: 1px solid black
+					.item_page8
+						width: 100%
+						height: 80%
+						// background-color: yellow
+						border: 10px solid $main_color
+						.item_price_details
+							outline: none
+							text-decoration: none
+							// background-color: $main_color
+							.item_img
+								width: 100%
+								height: 100%
+					.item_title
+						margin-top: 2%
+						margin-bottom: 2%
+						.p_text
+							text-transform: uppercase
+							font-size: 1.1em
+							font-family: 'Roboto-Medium'
+							color: #000	
+					.buttons
+						width: 100%
+						height: 10%
+						// background-color: red
+						.left_btn
+							cursor: pointer
+							width: 45%
+							height: 35px 
+							float: left
+							background-color: $main_color
+							font-family: 'Roboto-Bold'
+							color: #fff
+							border: none
+							outline: none
+							font-size: 1em
+							transition: all 0.25s
+							&:hover
+								transform: scale(0.96)
+								transition: all 0.25s
+						.right_btn
+							font-size: 1em
+							cursor: pointer
+							width: 45%
+							height: 35px
+							float: right
+							border: 3px solid $main_color
+							font-family: 'Roboto-Bold'
+							color: $main_color
+							letter-spacing: 1.8px
+							outline: none
+							background-color: #FFF
+							transition: all 0.25s
+							&:hover
+								transform: scale(0.96)
+								transition: all 0.25s
+				.last_in_line
+					margin-right: 0%
+				.more_goods
+					margin-top: 5%
+					// background-color: black
+					cursor: pointer
+					.p_text_more
+						// background-color: red
+						text-transform: uppercase
+						font-size: 1.1em
+						font-family: 'Roboto-Medium'
+						color: #000
+						transition: all 0.5s
+						&:hover
+							font-size: 1.05em
+							transition: all 0.5s
+							color: grey
+
+						
+		
+#footer
+	// background-image: url("../img/dummy/footer.png")
+	// background-color: $menu_bg
+	// background-repeat: no-repeat
+	// background-size: 95%
+	// background-position: center
+	// background-position: 13px
+	// background-size: 1920px 950px 
+	height: 100%
+	width: 100%
+	margin-top: 0%
+	// background-color: blue
+	.wrap
+		width: 100%
+		height: 100%
+		.callback_wrapper
+			width: 100%
+			height: 40%
+			margin-left: 1.5%
+			// background-color: rgba(0, 0, 0, 0.6)
+			background-color: $main_color
+			text-align: center
+			position: relative
+			.callback_form
+				width: 100%
+				height: 9%
+				margin-top: -6%
+				// opacity: 0.8
+				.form_title
+					text-align: center
+					padding-top: 3%
+					.p_text
+						display: inline-block
+						font-family: 'Roboto-Medium'	
+						font-size: 1.6em
+						color: #fff
+					.text_2
+						// padding-top: 1%
+						font-family: 'Roboto-Medium'	
+						color: #000
+						font-size: 2.0em
+						line-height: 2.0em
+						color: #000
+						letter-spacing: 1.5px
+				.form_send
+					text-align: center
+					// margin-top: 0%
+					width: 100%
+					height: 30%
+					// background-color: red
+					.input
+						margin-right: 2%
+						width: 20%
+						height: 50px
+						background-color: #FFF	
+						// border: 2px solid $main_color
+						padding-left: 1%
+						font-family: 'Roboto-Medium'
+						font-size: 1.0em
+						outline: none
+						&::placeholder
+							font-size: 16px
+							// padding-left: 15px
+					// .input_submit
+					// 	display: block
+					// 	// margin-left: 5%
+					// 	margin-top: 1.5%
+					// 	width: 25%
+					// 	height: 15%
+					// 	border: none
+					// 	background-color: $main_color
+					// 	color: #fff
+					// 	font-size: 1.4em
+					// 	cursor: pointer		
+		.footer_wrapper
+			background-image: url("../img/footer.jpg")
+			// background-color: red
+			text-align: center
+			width: 100%
+			height: 60%				
+			.input_submit
+				margin-top: 1.5%
+				width: 25%
+				height: 15%
+				border: none
+				background-color: $main_color
+				color: #fff
+				font-size: 1.4em
+				cursor: pointer
+				font-family: 'Roboto-Bold'
+			.socials
+				position: absolute
+				left: 0
+				right: 0
+				margin: auto
+				// background-color: blue
+				width: 15%
+				margin-top: 2%
+				.soc_link
+					float: left
+					// width: 100%
+					margin: 0% 5%
+					.soc_img
+						width: 150%
+						height: 150%
+						&:hover
+							transition: 
+							-webkit-filter: grayscale(100%)
+							filter: grayscale(100%)
+							transition: all .5s	
+			.tels
+				position: absolute
+				left: 0
+				right: 0
+				margin: auto
+				// background-color: blue
+				width: 35%
+				height: 7%
+				margin-top: 7%
+				// margin-top: 2%
+				.phone
+					float: left
+					// background-color: red
+					width: 10%
+					margin-top: 1%
+					.phone_img
+						width: 80%								
+				.left_tel
+					float: left
+					// background-color: black
+					width: 45%
+					height: 100%
+					border-right: 2px solid $main_color
+					.child	
+						display: inline-block
+						vertical-align: middle
+						.p_text
+							text-align: center
+							text-decoration: none
+							outline: none
+							color: #fff
+							// width: 80%
+							float: right
+							font-size: 1.6em
+							letter-spacing: 1.3px
+							font-family: 'EuropeDemi'
+					.helper
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+						width: 0px	
+				.right_tel
+					height: 100%
+					float: left
+					// background-color: yellow
+					width: 45%
+					border-right: 2px solid $main_color
+					.child
+						vertical-align: middle
+						display: inline-block
+						.p_text
+							text-align: center
+							// width: 80%
+							text-decoration: none
+							outline: none
+							color: #fff
+							float: right
+							font-size: 1.6em
+							letter-spacing: 1.3px
+							font-family: 'EuropeDemi'
+					.helper
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+						width: 0px		
+			.city
+				// background-color: red
+				position: absolute
+				margin: auto
+				// bottom: 5%
+				left: 0
+				right: 0
+				margin-top: 12%
+				// top: 0%
+				.city_p
+					font-size: 2.0em
+					font-family: 'Roboto-Bold'
+					color: $main_color
